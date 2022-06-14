@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  background-color: lightcyan;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "first first first second"
+    "third third fourth fourth"
+    "third third fifth fifth";
+  width: 50%;
+  margin: auto;
+  gap: 15px;
+}
+
+main div {
+  padding: 60px;
+}
+
+.first-box {
+  background-color: red;
+  grid-area: first;
+}
+
+.second-box {
+  background-color: orange;
+  grid-area: second;
+}
+
+.third-box {
+  background-color: green;
+  grid-area: third;
+}
+
+.fourth-box {
+  background-color: rgb(15, 154, 209);
+  grid-area: fourth;
+}
+
+.fifth-box {
+  background-color: rgb(15, 154, 209);
+  grid-area: fifth;
+}

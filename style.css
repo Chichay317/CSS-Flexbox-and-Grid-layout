@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: "Big Shoulders Display", cursive !important;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 1440px) {
+  main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .flex-one {
+    background-color: hsl(31, 77%, 52%);
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .flex-two {
+    background-color: hsl(184, 100%, 22%);
+    width: 100%;
+  }
+
+  .flex-three {
+    background-color: hsl(179, 100%, 13%);
+    width: 100%;
+  }
+
+  .heading {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsl(0, 0%, 95%);
+    padding: 20px 25px;
+    font-size: 25px;
+  }
+
+  .container .text-box {
+    font-family: "Big Shoulders Display", cursive !important;
+    color: hsl(0, 0%, 100%, 0.75);
+    padding: 20px 25px;
+    line-height: 1.8;
+  }
+
+  .image-box {
+    padding: 20px 25px;
+  }
+
+  .container .button {
+    display: block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    margin: 20px 25px;
+    border-radius: 15px;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .button-1 {
+    color: hsl(31, 77%, 52%);
+    font-weight: 600;
+  }
+
+  .button-2 {
+    color: hsl(184, 100%, 22%);
+    font-weight: 600;
+  }
+
+  .button-3 {
+    color: hsl(179, 100%, 13%);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
